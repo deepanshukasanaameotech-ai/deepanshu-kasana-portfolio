@@ -57,7 +57,7 @@ const App: React.FC = () => {
                 {/* Desktop Menu */}
                 <div className="hidden md:flex gap-8 font-display uppercase tracking-widest text-sm text-gray-400">
                    <a href="#about" className="hover:text-bb-yellow transition-colors">About</a>
-                   <Link to="/system" target="_blank" rel="noopener noreferrer" className="hover:text-bb-yellow transition-colors">Solar System</Link>
+                   <Link to="/system" className="hover:text-bb-yellow transition-colors">Solar System</Link>
                    <a href="#experience" className="hover:text-bb-yellow transition-colors">Empire</a>
                 </div>
 
@@ -81,7 +81,7 @@ const App: React.FC = () => {
                   >
                     <div className="flex flex-col items-center gap-6 py-8 font-display uppercase tracking-widest text-sm text-gray-400">
                       <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-bb-yellow transition-colors">About</a>
-                      <Link to="/system" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-bb-yellow transition-colors">Solar System</Link>
+                      <Link to="/system" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-bb-yellow transition-colors">Solar System</Link>
                       <a href="#experience" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-bb-yellow transition-colors">Empire</a>
                     </div>
                   </motion.div>
