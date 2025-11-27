@@ -21,3 +21,20 @@ export interface ChatMessage {
   text: string;
   isThinking?: boolean;
 }
+
+export interface ElementData {
+  atomicNumber: number;
+  symbol: string;
+  name: string;
+  mass: number;
+  orbitIndex: number; // Which shell/orbit line it belongs to
+  startAngle: number; // Initial position in degrees
+  speed: number; // Rotation speed duration in seconds
+  color?: string;
+}
+
+export interface GeminiResponse {
+  description: string;
+  dangerLevel: string;
+  uses: string;
+}
